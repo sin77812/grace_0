@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/personal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="personal-theme">
     <div class="scroll-progress"><div class="progress-bar"></div></div>
@@ -26,324 +26,465 @@
                 <li><a href="../common/process.html" class="nav__link">Process</a></li>
                 <li><a href="../common/contact.html" class="nav__link">Contact</a></li>
             </ul>
-            <div class="nav__switch">
-                <a href="../corporate/home.html" class="switch-btn">기업교육 보기</a>
+            <div class="nav__cta">
+                <button class="personal-consult-btn" onclick="openQuickContact()">개인 상담 신청</button>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero personal-hero">
-            <div class="hero__background">
-                <div class="hero__video-overlay"></div>
+        <!-- 1. Hero Section (풀스크린 임팩트) -->
+        <section class="premium-hero">
+            <div class="hero-content">
+                <h1 class="hero-main-title">
+                    당신의 숨겨진<br>
+                    <span class="highlight-text">스피치 잠재력</span>을<br>
+                    깨워드립니다
+                </h1>
+                <p class="hero-subtitle">개인 맞춤 1:1 코칭으로 자신감 있는 스피커로 변화시킵니다</p>
+                
+                <div class="hero-cta-group">
+                    <button class="hero-cta primary" onclick="scrollToStories()">성공 사례 보기</button>
+                </div>
             </div>
             
-            <!-- 기하학적 요소 -->
-            <div class="floating-geometry floating-geometry--top-right">
-                <div class="geometry-shape geometry-shape--square"></div>
-                <div class="geometry-shape geometry-shape--circle"></div>
-            </div>
-            <div class="floating-geometry floating-geometry--bottom-left">
-                <div class="geometry-shape geometry-shape--triangle"></div>
-                <div class="geometry-shape geometry-shape--hexagon"></div>
-            </div>
-
-            <div class="hero__content">
-                <h1 class="hero__title">
-                    당신의 숨겨진 스피치
-                    <span class="highlight-text">잠재력을 깨워드립니다</span>
-                </h1>
-                <p class="hero__subtitle">
-                    개인 맞춤 1:1 코칭으로<br>
-                    자신감 있는 스피커로 변화시킵니다
-                </p>
-                <div class="hero__cta-group">
-                    <button class="hero__cta primary" onclick="scrollToContact()">
-                        무료 레벨테스트 신청
-                    </button>
-                    <button class="hero__cta secondary" onclick="scrollToResults()">
-                        성공사례 보기
-                    </button>
-                </div>
-
-                <div class="trust-badges">
-                    <div class="badge">
-                        <span class="number">1,000+</span>
-                        <span class="label">수강생 배출</span>
-                    </div>
-                    <div class="badge">
-                        <span class="number">98%</span>
-                        <span class="label">목표 달성률</span>
-                    </div>
-                    <div class="badge">
-                        <span class="number">8주</span>
-                        <span class="label">평균 변화 기간</span>
-                    </div>
-                </div>
+            <!-- 떠다니는 요소들 -->
+            <div class="floating-elements">
+                <div class="floating-circle floating-circle--1"></div>
+                <div class="floating-circle floating-circle--2"></div>
+                <div class="floating-circle floating-circle--3"></div>
             </div>
         </section>
 
-        <div class="section-divider"></div>
-
-        <!-- Why Personal Grace Speech -->
-        <section class="why-section" id="why-section">
+        <!-- 2. Success Metrics (수치 임팩트) -->
+        <section class="success-metrics">
             <div class="container">
-                <h2 class="section-title">Why Personal Grace Speech</h2>
-                <div class="why-grid">
-                    <div class="why-card">
-                        <div class="card-icon">👤</div>
-                        <h3>개인 맞춤 1:1 코칭</h3>
-                        <p>개인의 성향과 목표에 완벽하게 맞춘 전담 코치 시스템</p>
-                    </div>
-                    <div class="why-card">
-                        <div class="card-icon">🎯</div>
-                        <h3>실전 중심 커리큘럼</h3>
-                        <p>이론보다는 실제 상황에서 바로 활용 가능한 실무 중심 교육</p>
-                    </div>
-                    <div class="why-card">
-                        <div class="card-icon">📈</div>
-                        <h3>단계별 성장 관리</h3>
-                        <p>체계적인 단계별 학습으로 확실한 성장을 보장</p>
-                    </div>
-                    <div class="why-card">
-                        <div class="card-icon">💯</div>
-                        <h3>평생 사후 지원</h3>
-                        <p>수료 후에도 지속되는 멘토링과 성장 지원 시스템</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Our Personal Results -->
-        <section class="results-section" id="results-section">
-            <div class="container">
-                <h2 class="section-title">Our Personal Results</h2>
-                <div class="results-grid">
-                    <div class="result-item">
-                        <div class="result-number">1,000+</div>
-                        <div class="result-label">수강생 배출</div>
-                        <div class="result-desc">개인 성장 스토리</div>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-number">98%</div>
-                        <div class="result-label">목표 달성률</div>
-                        <div class="result-desc">설정한 목표 완주</div>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-number">8주</div>
-                        <div class="result-label">평균 변화 체감</div>
-                        <div class="result-desc">눈에 띄는 향상</div>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-number">95%</div>
-                        <div class="result-label">추천 의향</div>
-                        <div class="result-desc">만족도 극대화</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Personal Success Stories -->
-        <section class="stories-section">
-            <div class="container">
-                <h2 class="section-title">Personal Success Stories</h2>
-                <p class="section-subtitle">함께 성장한 개인들의 변화 이야기</p>
+                <h2 class="section-title-premium">놀라운 변화의 수치들</h2>
                 
-                <div class="stories-grid">
-                    <div class="story-card featured">
-                        <div class="story-header">
-                            <h3>면접 공포 완전 극복</h3>
-                            <span class="story-type">취업준비생 • 김○○님</span>
-                        </div>
-                        <div class="story-content">
-                            <p>"8주 과정으로 면접 공포증을 완전히 극복했고, 원하던 대기업에 합격했습니다. 이제는 회사에서 발표를 자청할 정도로 자신감이 생겼어요."</p>
-                            <div class="story-results">
-                                <span class="result-tag">면접 성공률 100%</span>
-                                <span class="result-tag">발표 불안 80% 감소</span>
+                <div class="metrics-grid">
+                    <div class="metric-card" data-number="100">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">면접성공률</div>
+                        <div class="metric-description">수강생 면접 통과율</div>
+                    </div>
+                    
+                    <div class="metric-card" data-number="80">
+                        <div class="metric-number">80%</div>
+                        <div class="metric-label">불안감소율</div>
+                        <div class="metric-description">스피치 불안 개선율</div>
+                    </div>
+                    
+                    <div class="metric-card" data-number="8">
+                        <div class="metric-number">8주</div>
+                        <div class="metric-label">평균과정</div>
+                        <div class="metric-description">변화 완성 기간</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Why Personal Grace (4개 특징 카드) -->
+        <section class="why-personal-grace">
+            <div class="container">
+                <h2 class="section-title-premium white">왜 개인 맞춤 Grace Speech인가</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-premium-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>전담코치</h3>
+                        <p>개인 성향과<br>목표에 완벽<br>맞춤 시스템</p>
+                    </div>
+                    
+                    <div class="feature-premium-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>실무중심</h3>
+                        <p>이론보다는<br>실제 상황<br>활용 교육</p>
+                    </div>
+                    
+                    <div class="feature-premium-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>단계별학습</h3>
+                        <p>체계적인<br>단계별<br>성장 보장</p>
+                    </div>
+                    
+                    <div class="feature-premium-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>지속지원</h3>
+                        <p>수료 후에도<br>지속되는<br>멘토링</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Success Stories (후기 섹션) -->
+        <section class="success-stories-premium" id="success-stories">
+            <div class="container">
+                <h2 class="section-title-premium">함께 성장한 개인들의 변화 이야기</h2>
+                
+                <div class="stories-slider">
+                    <div class="story-slider-container">
+                        <div class="story-premium-card active">
+                            <div class="story-content">
+                                <h4>"8주 과정으로 면접 공포증을 완전히 극복했습니다"</h4>
+                                
+                                <div class="before-after">
+                                    <div class="before">
+                                        <span class="label">Before</span>
+                                        <p>면접만 하면 떨림, 목소리 떨림, 머릿속 하얘짐</p>
+                                    </div>
+                                    <div class="after">
+                                        <span class="label">After</span>
+                                        <p>대기업 합격 + 회사에서 발표 자청하는 자신감</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="story-author">
+                                    <div class="author-info">
+                                        <span class="name">김○○님</span>
+                                        <span class="details">28세, 마케터</span>
+                                    </div>
+                                    <div class="story-tags">
+                                        <span class="tag">면접 성공</span>
+                                        <span class="tag">자신감 향상</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="story-footer">
-                            <span class="goal-badge interview">면접 대비</span>
+
+                        <div class="story-premium-card">
+                            <div class="story-content">
+                                <h4>"회사 프레젠테이션이 이제 즐거운 일이 되었어요"</h4>
+                                
+                                <div class="before-after">
+                                    <div class="before">
+                                        <span class="label">Before</span>
+                                        <p>발표 순서만 되면 밤잠 못 이루고 스트레스</p>
+                                    </div>
+                                    <div class="after">
+                                        <span class="label">After</span>
+                                        <p>팀장 승진 + 중요 프로젝트 발표 담당</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="story-author">
+                                    <div class="author-info">
+                                        <span class="name">박○○님</span>
+                                        <span class="details">35세, 프로젝트 매니저</span>
+                                    </div>
+                                    <div class="story-tags">
+                                        <span class="tag">승진 성공</span>
+                                        <span class="tag">프레젠테이션</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story-premium-card">
+                            <div class="story-content">
+                                <h4>"창업 IR 피칭에서 투자 유치에 성공했습니다"</h4>
+                                
+                                <div class="before-after">
+                                    <div class="before">
+                                        <span class="label">Before</span>
+                                        <p>좋은 아이디어 있지만 투자자 앞에서 말문 막힘</p>
+                                    </div>
+                                    <div class="after">
+                                        <span class="label">After</span>
+                                        <p>시드 투자 5억 유치 + 연속 창업자로 인정</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="story-author">
+                                    <div class="author-info">
+                                        <span class="name">이○○님</span>
+                                        <span class="details">32세, 스타트업 CEO</span>
+                                    </div>
+                                    <div class="story-tags">
+                                        <span class="tag">투자 유치</span>
+                                        <span class="tag">창업 성공</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story-premium-card">
+                            <div class="story-content">
+                                <h4>"결혼식 주례를 완벽하게 소화해냈어요"</h4>
+                                
+                                <div class="before-after">
+                                    <div class="before">
+                                        <span class="label">Before</span>
+                                        <p>친구 결혼식 주례 부탁받고 한 달간 고민</p>
+                                    </div>
+                                    <div class="after">
+                                        <span class="label">After</span>
+                                        <p>하객들 박수갈채 + 주례 요청 줄줄이</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="story-author">
+                                    <div class="author-info">
+                                        <span class="name">최○○님</span>
+                                        <span class="details">42세, 회계사</span>
+                                    </div>
+                                    <div class="story-tags">
+                                        <span class="tag">특별 목적</span>
+                                        <span class="tag">완벽 소화</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="story-card">
-                        <div class="story-header">
-                            <h3>승진 프레젠테이션 성공</h3>
-                            <span class="story-type">직장인 • 박○○님</span>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" onclick="changeStory(-1)">‹</button>
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentStory(1)"></span>
+                            <span class="dot" onclick="currentStory(2)"></span>
+                            <span class="dot" onclick="currentStory(3)"></span>
+                            <span class="dot" onclick="currentStory(4)"></span>
                         </div>
-                        <div class="story-content">
-                            <p>승진 심사 프레젠테이션을 완벽하게 소화해 팀장으로 승진했습니다.</p>
-                        </div>
-                        <div class="story-footer">
-                            <span class="goal-badge career">승진</span>
-                        </div>
+                        <button class="slider-btn next" onclick="changeStory(1)">›</button>
                     </div>
-
-                    <div class="story-card">
-                        <div class="story-header">
-                            <h3>창업 IR 피칭 성공</h3>
-                            <span class="story-type">창업가 • 이○○님</span>
-                        </div>
-                        <div class="story-content">
-                            <p>투자자 앞에서 확신에 찬 피칭으로 시드 투자 유치에 성공했습니다.</p>
-                        </div>
-                        <div class="story-footer">
-                            <span class="goal-badge startup">창업</span>
-                        </div>
-                    </div>
-
-                    <div class="story-card">
-                        <div class="story-header">
-                            <h3>강사로 성공적 변신</h3>
-                            <span class="story-type">강사전환 • 최○○님</span>
-                        </div>
-                        <div class="story-content">
-                            <p>강사양성과정을 통해 전문 강사로 데뷔, 현재 월 500만원 수익 달성</p>
-                        </div>
-                        <div class="story-footer">
-                            <span class="goal-badge instructor">강사</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stories-cta">
-                    <a href="#" class="stories-link">더 많은 성공사례 보기</a>
                 </div>
             </div>
         </section>
 
-        <div class="section-divider"></div>
-
-        <!-- Quick Course Overview -->
-        <section class="courses-preview">
+        <!-- 5. Process Preview (과정 미리보기) -->
+        <section class="process-preview">
             <div class="container">
-                <h2 class="section-title">개인 맞춤 과정</h2>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <div class="course-icon">🎓</div>
-                        <h3>강사양성과정</h3>
-                        <p>6개월 완성 전문 강사 양성<br>창업 지원까지</p>
-                        <a href="instructor.html" class="course-link">자세히 보기</a>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-icon">👨‍💼</div>
-                        <h3>1:1 컨설팅</h3>
-                        <p>개인별 맞춤 코칭<br>4-8주 집중 과정</p>
-                        <a href="consulting.html" class="course-link">자세히 보기</a>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-icon">📱</div>
-                        <h3>디지털 콘텐츠</h3>
-                        <p>언제 어디서나 학습<br>VOD + 전자책</p>
-                        <a href="digital.html" class="course-link">자세히 보기</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- Contact Section -->
-        <section class="contact-preview" id="contact-section">
-            <div class="container">
-                <h2 class="section-title">개인 맞춤 상담</h2>
-                <p class="section-subtitle">당신에게 최적화된 학습 경로를 제안드립니다</p>
+                <h2 class="section-title-premium white">체계적인 8주 변화 과정</h2>
                 
-                <div class="contact-grid">
-                    <div class="contact-option">
-                        <div class="option-icon">📋</div>
-                        <h3>무료 레벨 테스트</h3>
-                        <p>현재 실력 정확한 진단</p>
-                        <a href="#" class="contact-btn" onclick="openLevelTest()">테스트 신청</a>
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="week">1-2주</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>기초 진단 및 목표 설정</h4>
+                            <p>현재 실력 정확한 분석과 개인별 목표 설정</p>
+                        </div>
                     </div>
-                    <div class="contact-option">
-                        <div class="option-icon">💬</div>
-                        <h3>1:1 상담</h3>
-                        <p>개인 맞춤 학습 계획 수립</p>
-                        <a href="../common/contact.html" class="contact-btn">상담 신청</a>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="week">3-4주</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>발성, 발음 완벽 교정</h4>
+                            <p>정확한 발음과 안정된 발성 기초 완성</p>
+                        </div>
                     </div>
-                    <div class="contact-option">
-                        <div class="option-icon">🎯</div>
-                        <h3>목표별 과정 추천</h3>
-                        <p>목적에 따른 최적 과정 안내</p>
-                        <a href="#" class="contact-btn" onclick="openCourseRecommendation()">과정 추천</a>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="week">5-6주</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>실전 스피치 훈련</h4>
+                            <p>다양한 상황별 스피치 기법과 실전 연습</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <span class="week">7-8주</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>완성 및 실전 시뮬레이션</h4>
+                            <p>실제 상황과 동일한 환경에서 최종 점검</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-cta">
+                    <a href="../common/process.html" class="process-detail-btn">전체 과정 자세히 보기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact & CTA (강력한 마무리) -->
+        <section class="final-cta">
+            <div class="container">
+                <h2 class="final-title">지금 바로 시작하세요</h2>
+                <p class="final-subtitle">첫 상담은 무료입니다</p>
+                
+                <button class="main-cta-btn" onclick="openQuickContact()">무료 상담 신청하기</button>
+                
+                <div class="contact-options">
+                    <div class="contact-option" onclick="openKakaoChat()">
+                        <span class="contact-icon">💬</span>
+                        <span class="contact-text">카카오톡 상담</span>
+                    </div>
+                    <div class="contact-option" onclick="openPhoneConsult()">
+                        <span class="contact-icon">📞</span>
+                        <span class="contact-text">전화 상담</span>
+                    </div>
+                    <div class="contact-option" onclick="openSchedule()">
+                        <span class="contact-icon">📝</span>
+                        <span class="contact-text">상담 예약</span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 고정 CTA -->
-    <div class="floating-cta">
-        <button class="floating-btn" onclick="openQuickContact()">
-            <span class="btn-icon">💬</span>
-            <span class="btn-text">빠른 상담</span>
-        </button>
-    </div>
-
-    <!-- 레벨테스트 모달 -->
-    <div class="level-test-modal" id="levelTestModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>무료 레벨 테스트</h3>
-                <button class="modal-close" onclick="closeLevelTest()">×</button>
-            </div>
-            <div class="test-content">
-                <p>현재 스피치 실력을 정확히 진단하여 최적의 학습 경로를 제안드립니다.</p>
-                <form class="test-form">
-                    <input type="text" placeholder="이름" required>
-                    <input type="tel" placeholder="연락처" required>
-                    <select required>
-                        <option value="">현재 스피치 경험</option>
-                        <option value="beginner">완전 초보자</option>
-                        <option value="basic">기본 경험 있음</option>
-                        <option value="intermediate">어느 정도 가능</option>
-                        <option value="advanced">상급자</option>
-                    </select>
-                    <select required>
-                        <option value="">주요 목적</option>
-                        <option value="interview">면접/취업</option>
-                        <option value="presentation">회사 발표</option>
-                        <option value="confidence">자신감 향상</option>
-                        <option value="instructor">강사 도전</option>
-                    </select>
-                    <textarea placeholder="구체적인 목표나 고민사항을 알려주세요"></textarea>
-                    <button type="submit" class="submit-btn">레벨테스트 신청</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <!-- 빠른 상담 모달 -->
     <div class="quick-contact-modal" id="quickContactModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>빠른 상담 신청</h3>
+                <h3>무료 개인 상담 신청</h3>
                 <button class="modal-close" onclick="closeQuickContact()">×</button>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="이름" required>
-                <input type="tel" placeholder="연락처" required>
+            <form class="contact-form" id="quickContactForm">
+                <input type="text" placeholder="이름 *" required>
+                <input type="tel" placeholder="연락처 *" required>
+                <input type="email" placeholder="이메일 *" required>
                 <select required>
-                    <option value="">관심 과정</option>
-                    <option value="instructor">강사양성과정</option>
-                    <option value="consulting">1:1 컨설팅</option>
-                    <option value="digital">디지털 콘텐츠</option>
-                    <option value="custom">맞춤 상담</option>
+                    <option value="">관심 분야 선택 *</option>
+                    <option value="interview">면접 스피치</option>
+                    <option value="presentation">업무 프레젠테이션</option>
+                    <option value="confidence">전반적 자신감</option>
+                    <option value="special">특별 목적 (결혼식, 창업 등)</option>
                 </select>
-                <textarea placeholder="목표나 요청사항을 알려주세요"></textarea>
+                <textarea placeholder="현재 상황과 목표를 간단히 알려주세요"></textarea>
+                <div class="form-check">
+                    <input type="checkbox" id="urgent" name="urgent">
+                    <label for="urgent">빠른 시작을 원합니다 (우선 연락)</label>
+                </div>
                 <button type="submit" class="submit-btn">상담 신청</button>
             </form>
         </div>
     </div>
 
+    <div class="floating-cta">
+        <button class="floating-btn" onclick="openQuickContact()">
+            <span class="btn-icon">💬</span>
+            <span class="btn-text">상담 신청</span>
+        </button>
+    </div>
+
     <script src="../js/main.js"></script>
     <script src="../js/personal.js"></script>
+    <script>
+        // 스토리 슬라이더
+        let currentStoryIndex = 0;
+        const stories = document.querySelectorAll('.story-premium-card');
+        const dots = document.querySelectorAll('.dot');
+
+        function showStory(index) {
+            stories.forEach((story, i) => {
+                story.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function changeStory(direction) {
+            currentStoryIndex += direction;
+            if (currentStoryIndex >= stories.length) currentStoryIndex = 0;
+            if (currentStoryIndex < 0) currentStoryIndex = stories.length - 1;
+            showStory(currentStoryIndex);
+        }
+
+        function currentStory(index) {
+            currentStoryIndex = index - 1;
+            showStory(currentStoryIndex);
+        }
+
+        function scrollToStories() {
+            document.getElementById('success-stories').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // 자동 슬라이더
+        setInterval(() => {
+            changeStory(1);
+        }, 8000);
+
+        // 수치 애니메이션
+        function animateNumbers() {
+            const metricCards = document.querySelectorAll('.metric-card');
+            
+            metricCards.forEach(card => {
+                const number = card.querySelector('.metric-number');
+                const targetNumber = parseInt(card.dataset.number);
+                const isPercentage = number.textContent.includes('%');
+                const isWeeks = number.textContent.includes('주');
+                
+                let current = 0;
+                const increment = targetNumber / 60;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= targetNumber) {
+                        current = targetNumber;
+                        clearInterval(timer);
+                    }
+                    
+                    if (isPercentage) {
+                        number.textContent = Math.floor(current) + '%';
+                    } else if (isWeeks) {
+                        number.textContent = Math.floor(current) + '주';
+                    } else {
+                        number.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+
+        // 스크롤 애니메이션
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('success-metrics')) {
+                        animateNumbers();
+                    }
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.success-metrics, .why-personal-grace, .success-stories-premium, .process-preview').forEach(section => {
+            observer.observe(section);
+        });
+
+        // 연락처 옵션 함수들
+        function openKakaoChat() {
+            alert('카카오톡 상담: @gracespeech로 문의해주세요!');
+        }
+
+        function openPhoneConsult() {
+            alert('전화 상담: 02-1234-5678로 연락주세요!');
+        }
+
+        function openSchedule() {
+            openQuickContact();
+        }
+
+        // 폼 제출 처리
+        document.getElementById('quickContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            submitBtn.textContent = '신청 중...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('상담 신청이 완료되었습니다!\n24시간 내에 개인 맞춤 상담을 위해 연락드리겠습니다.');
+                closeQuickContact();
+                this.reset();
+                submitBtn.textContent = '상담 신청';
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+    </script>
 </body>
 </html>

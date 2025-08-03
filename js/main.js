@@ -9,6 +9,10 @@ function goToPersonal() {
     window.location.href = 'personal/home.html';
 }
 
+function goToInstructor() {
+    window.location.href = 'personal/instructor.html';
+}
+
 function goToAbout() {
     window.location.href = 'common/about.html';
 }
@@ -37,54 +41,58 @@ function toggleMobileMenu() {
     }
 }
 
-// 섹션 호버 효과
+// 빠른 상담 모달 관리
+function openQuickContact() {
+    const modal = document.getElementById('quickContactModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeQuickContact() {
+    const modal = document.getElementById('quickContactModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// 스크롤 진행 바
+function updateScrollProgress() {
+    const scrollProgress = document.querySelector('.scroll-progress .progress-bar');
+    if (scrollProgress) {
+        const scrollTop = window.pageYOffset;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = scrollPercent + '%';
+    }
+}
+
+// 이벤트 리스너
+document.addEventListener('scroll', updateScrollProgress);
+
+// 모달 외부 클릭시 닫기
+document.addEventListener('click', function(e) {
+    const quickContactModal = document.getElementById('quickContactModal');
+    
+    if (quickContactModal && e.target === quickContactModal) {
+        closeQuickContact();
+    }
+});
+
+// 섹션 클릭 애니메이션
 document.addEventListener('DOMContentLoaded', function() {
-    const corporateSection = document.getElementById('corporateSection');
-    const personalSection = document.getElementById('personalSection');
-    const centerSection = document.querySelector('.landing-center');
-
-    // 마우스 호버시 중앙 이미지 기울기 효과
-    corporateSection.addEventListener('mouseenter', function() {
-        centerSection.style.transform = 'rotateY(-5deg)';
-        centerSection.style.transformOrigin = 'right center';
-    });
-
-    personalSection.addEventListener('mouseenter', function() {
-        centerSection.style.transform = 'rotateY(5deg)';
-        centerSection.style.transformOrigin = 'left center';
-    });
-
-    corporateSection.addEventListener('mouseleave', function() {
-        centerSection.style.transform = 'rotateY(0deg)';
-    });
-
-    personalSection.addEventListener('mouseleave', function() {
-        centerSection.style.transform = 'rotateY(0deg)';
-    });
-
-    // 클릭시 페이지 전환 애니메이션
-    corporateSection.addEventListener('click', function() {
-        if (window.innerWidth > 1024) {
-            document.body.style.transform = 'translateX(-100%)';
-            document.body.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+    const solutionSections = document.querySelectorAll('.solution-section');
+    
+    solutionSections.forEach(section => {
+        section.addEventListener('click', function() {
+            // 클릭 효과
+            this.style.transform = 'scale(0.98) translateY(-4px)';
             setTimeout(() => {
-                goToCorporate();
-            }, 600);
-        } else {
-            goToCorporate();
-        }
-    });
-
-    personalSection.addEventListener('click', function() {
-        if (window.innerWidth > 1024) {
-            document.body.style.transform = 'translateX(100%)';
-            document.body.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-            setTimeout(() => {
-                goToPersonal();
-            }, 600);
-        } else {
-            goToPersonal();
-        }
+                this.style.transform = '';
+            }, 150);
+        });
     });
 });
 
