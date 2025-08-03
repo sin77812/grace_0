@@ -1,0 +1,467 @@
+/* Grace Speech CSS - AKQA 프리미엄 + Chiro 분위기 */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Grace Speech Color Palette */
+    --primary-deep-green: #06342e;
+    --accent-brown: #937258;
+    --text-white: #ffffff;
+    --text-soft-white: #f8f9fa;
+    --text-light: rgba(255, 255, 255, 0.8);
+    --surface-overlay: rgba(255, 255, 255, 0.1);
+    --surface-dark: rgba(0, 0, 0, 0.2);
+    
+    /* Typography (AKQA inspired) */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* AKQA-style Typography Scale */
+    --text-hero: 84px;
+    --text-title: 48px;
+    --text-subtitle: 24px;
+    --text-body: 18px;
+    --text-caption: 14px;
+    
+    /* Premium Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --spacing-xxl: 6rem;
+    --section-padding: 120px;
+    
+    /* Borders and Effects */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-premium: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--primary-deep-green);
+    color: var(--text-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: var(--font-weight-regular);
+}
+
+/* 3-Split 랜딩 레이아웃 */
+.landing-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+/* 좌우 섹션 기본 스타일 */
+.landing-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    position: relative;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.landing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.landing-section:hover::before {
+    opacity: 1;
+}
+
+/* 기업용 섹션 (왼쪽) */
+.landing-corporate {
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #0a4338 100%);
+}
+
+.landing-corporate .cta-button {
+    background: var(--accent-brown);
+    color: var(--text-white);
+}
+
+.landing-corporate .cta-button:hover {
+    background: #a67c5a;
+    transform: translateY(-2px);
+}
+
+/* 개인용 섹션 (오른쪽) */
+.landing-personal {
+    background: linear-gradient(135deg, var(--accent-brown) 0%, #a67c5a 100%);
+}
+
+.landing-personal .cta-button {
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+}
+
+.landing-personal .cta-button:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+/* 중앙 강사 이미지 영역 */
+.landing-center {
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--primary-deep-green), var(--accent-brown));
+    position: relative;
+    z-index: 10;
+}
+
+.instructor-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.tagline {
+    font-size: var(--text-body);
+    color: var(--text-light);
+    font-weight: var(--font-weight-light);
+}
+
+/* 섹션 콘텐츠 */
+.section-content {
+    text-align: center;
+    max-width: 400px;
+}
+
+.section-header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+    font-size: var(--text-title);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-size: var(--text-subtitle);
+    font-weight: var(--font-weight-light);
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+/* 특징 수치 */
+.section-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xl);
+    gap: var(--spacing-md);
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-number {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-label {
+    font-size: var(--text-caption);
+    color: var(--text-light);
+    font-weight: var(--font-weight-medium);
+}
+
+/* CTA 버튼 */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 16px 32px;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-body);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-subtle);
+    font-family: var(--font-primary);
+}
+
+.cta-button svg {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+    transform: translateX(4px);
+}
+
+/* 하단 네비게이션 */
+.bottom-nav {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 100;
+}
+
+.nav-link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 모바일 메뉴 */
+.mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    z-index: 200;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-toggle span {
+    width: 20px;
+    height: 2px;
+    background: var(--text-white);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(6, 52, 46, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: 150;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-content {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.mobile-option {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    color: var(--text-white);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-primary);
+}
+
+.mobile-option:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.mobile-option h3 {
+    font-size: var(--text-subtitle);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.mobile-option p {
+    font-size: var(--text-body);
+    color: var(--text-light);
+}
+
+.mobile-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.mobile-nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    padding: var(--spacing-sm);
+}
+
+/* 태블릿 반응형 */
+@media (max-width: 1024px) {
+    .landing-container {
+        flex-direction: column;
+    }
+    
+    .landing-center {
+        width: 100%;
+        height: 200px;
+        order: -1;
+    }
+    
+    .landing-section {
+        padding: var(--spacing-lg);
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .bottom-nav {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .landing-container {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .landing-center {
+        height: 150px;
+    }
+    
+    .image-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    .section-features {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .feature {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--spacing-sm);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-sm);
+    }
+    
+    .mobile-menu-overlay.active {
+        display: flex;
+    }
+    
+    .mobile-nav-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* 부드러운 애니메이션 (Chiro 분위기) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-content > * {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.section-content > *:nth-child(1) { animation-delay: 0.1s; }
+.section-content > *:nth-child(2) { animation-delay: 0.2s; }
+.section-content > *:nth-child(3) { animation-delay: 0.3s; }
+.section-content > *:nth-child(4) { animation-delay: 0.4s; }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Grace Speech</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="common-theme">
+    <div class="scroll-progress"><div class="progress-bar"></div></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="../index.html" class="logo">Grace Speech</a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="../corporate/home.html" class="nav__link">기업교육</a></li>
+                <li><a href="../personal/home.html" class="nav__link">개인과정</a></li>
+                <li><a href="process.html" class="nav__link">Process</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="contact.html" class="nav__link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">언제든지 편하게 연락주세요</p>
+            </div>
+        </section>
+
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- 왼쪽: 연락처 정보 -->
+                    <div class="contact-info">
+                        <h2>Grace Speech와 함께하세요</h2>
+                        <p>소통의 힘으로 세상을 변화시키는 Grace Speech입니다.<br>궁금한 점이나 상담이 필요하시면 언제든 연락주세요.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📞</div>
+                                <div class="method-details">
+                                    <h3>전화 상담</h3>
+                                    <p>02-1234-5678</p>
+                                    <span>평일 09:00 - 18:00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-details">
+                                    <h3>이메일 문의</h3>
+                                    <p>hello@gracespeech.com</p>
+                                    <span>24시간 접수</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">💬</div>
+                                <div class="method-details">
+                                    <h3>카카오톡 상담</h3>
+                                    <p>@gracespeech</p>
+                                    <span>실시간 상담</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-details">
+                                    <h3>오시는 길</h3>
+                                    <p>서울시 강남구 테헤란로 123</p>
+                                    <span>Grace Speech 빌딩 5층</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 오른쪽: 문의 폼 -->
+                    <div class="contact-form-section">
+                        <h2>상담 신청</h2>
+                        <form class="main-contact-form" id="mainContactForm">
+                            <div class="form-row">
+                                <input type="text" name="name" placeholder="이름 *" required>
+                                <input type="tel" name="phone" placeholder="연락처 *" required>
+                            </div>
+                            <input type="email" name="email" placeholder="이메일 *" required>
+                            <select name="category" required>
+                                <option value="">문의 유형 선택 *</option>
+                                <option value="corporate">기업 교육 문의</option>
+                                <option value="personal">개인 과정 문의</option>
+                                <option value="instructor">강사양성과정 문의</option>
+                                <option value="consulting">1:1 컨설팅 문의</option>
+                                <option value="digital">디지털 콘텐츠 문의</option>
+                                <option value="other">기타 문의</option>
+                            </select>
+                            <input type="text" name="subject" placeholder="제목 *" required>
+                            <textarea name="message" placeholder="상세 내용을 알려주세요 *" required></textarea>
+                            
+                            <div class="form-check">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">개인정보 처리방침에 동의합니다</label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">문의하기</span>
+                                <span class="btn-loading">전송 중...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-contact-section">
+            <div class="container">
+                <h2 class="section-title">빠른 상담</h2>
+                <div class="quick-options">
+                    <a href="tel:02-1234-5678" class="quick-option">
+                        <div class="option-icon">📞</div>
+                        <h3>전화 상담</h3>
+                        <p>바로 연결</p>
+                    </a>
+                    <a href="https://pf.kakao.com/_gracespeech" class="quick-option" target="_blank">
+                        <div class="option-icon">💬</div>
+                        <h3>카카오톡</h3>
+                        <p>실시간 채팅</p>
+                    </a>
+                    <a href="mailto:hello@gracespeech.com" class="quick-option">
+                        <div class="option-icon">📧</div>
+                        <h3>이메일</h3>
+                        <p>상세 문의</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">오시는 길</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <!-- 실제 구현시 네이버/카카오 지도 API 연동 -->
+                        <div class="map-info">
+                            <h3>Grace Speech 본사</h3>
+                            <p>서울시 강남구 테헤란로 123<br>Grace Speech 빌딩 5층</p>
+                            <p><strong>지하철:</strong> 2호선 역삼역 3번 출구 도보 5분</p>
+                            <p><strong>버스:</strong> 146, 341, 360 (역삼역 정류장)</p>
+                            <p><strong>주차:</strong> 건물 지하 주차장 이용 가능</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>
