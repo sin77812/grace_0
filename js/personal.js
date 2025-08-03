@@ -470,10 +470,50 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 
+// Functions for consulting page
+function openConsultingForm() {
+    const modal = document.getElementById('consultingModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeConsultingForm() {
+    const modal = document.getElementById('consultingModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Functions for instructor page
+function openApplicationForm() {
+    const modal = document.getElementById('applicationModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeApplicationForm() {
+    const modal = document.getElementById('applicationModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function openInfoSession() {
+    alert('설명회 신청 기능이 곧 오픈됩니다. 현재는 전화상담을 이용해주세요.\n📞 02-1234-5678');
+}
+
 // 모달 외부 클릭시 닫기 (개인용)
 document.addEventListener('click', function(e) {
     const levelTestModal = document.getElementById('levelTestModal');
     const recommendationModal = document.getElementById('courseRecommendationModal');
+    const consultingModal = document.getElementById('consultingModal');
+    const applicationModal = document.getElementById('applicationModal');
     
     if (levelTestModal && e.target === levelTestModal) {
         closeLevelTest();
@@ -481,5 +521,13 @@ document.addEventListener('click', function(e) {
     
     if (recommendationModal && e.target === recommendationModal) {
         closeRecommendation();
+    }
+    
+    if (consultingModal && e.target === consultingModal) {
+        closeConsultingForm();
+    }
+    
+    if (applicationModal && e.target === applicationModal) {
+        closeApplicationForm();
     }
 });

@@ -492,3 +492,1777 @@
     0%, 100% { opacity: 0.5; transform: scale(1); }
     50% { opacity: 1; transform: scale(1.2); }
 }
+
+/* 개인 솔루션 페이지 스타일 */
+.page-hero {
+    padding: 120px 0 80px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent-brown) 0%, #a67c5a 100%);
+    color: var(--text-white);
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-white);
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    opacity: 0.9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--primary-deep-green);
+}
+
+/* 컨설팅 페이지 스타일 */
+.consulting-overview {
+    padding: var(--section-padding) 0;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.overview-content h2 {
+    font-size: 2.2rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-deep-green);
+}
+
+.overview-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xl);
+}
+
+.consulting-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--theme-surface);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.benefit-content h4 {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.benefit-content p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.overview-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.placeholder-content h3 {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.placeholder-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* 프로그램 카드 */
+.programs-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.program-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium);
+}
+
+.program-card.recommended {
+    border-color: var(--primary-deep-green);
+    box-shadow: 0 0 20px rgba(6, 52, 46, 0.1);
+}
+
+.program-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+    font-weight: var(--font-weight-semibold);
+}
+
+.program-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.program-header h3 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+}
+
+.program-duration {
+    background: var(--theme-surface);
+    color: var(--text-light);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+}
+
+.program-target, .program-goal {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.target-label, .goal-label {
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-dark);
+    min-width: 50px;
+}
+
+.target-value, .goal-value {
+    color: var(--text-light);
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-lg) 0;
+}
+
+.program-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 20px;
+}
+
+.program-features li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-deep-green);
+    font-weight: bold;
+}
+
+.program-result {
+    background: var(--theme-surface);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-lg) 0;
+}
+
+.program-result h4 {
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.program-result p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.program-price {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.price-value {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    display: block;
+}
+
+.price-detail {
+    font-size: var(--text-caption);
+    color: var(--text-light);
+    margin-top: var(--spacing-xs);
+}
+
+.program-btn {
+    width: 100%;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border: none;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.program-btn:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+/* 진행 과정 섹션 */
+.process-section {
+    padding: var(--section-padding) 0;
+}
+
+.process-flow {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.process-step {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: flex-start;
+}
+
+.step-number {
+    min-width: 60px;
+    height: 60px;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-content p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.step-details {
+    list-style: none;
+    padding: 0;
+}
+
+.step-details li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 20px;
+}
+
+.step-details li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-deep-green);
+    font-weight: bold;
+}
+
+/* 보장 시스템 */
+.guarantee-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.guarantee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.guarantee-card {
+    background: var(--surface-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 1px solid rgba(6, 52, 46, 0.1);
+    transition: all 0.3s ease;
+}
+
+.guarantee-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-premium);
+}
+
+.guarantee-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.guarantee-card h3 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.guarantee-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* 후기 섹션 */
+.testimonials-section {
+    padding: var(--section-padding) 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.testimonial-card {
+    background: var(--theme-surface);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.testimonial-rating {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.testimonial-content {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.author-name {
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+}
+
+.author-course {
+    font-size: var(--text-caption);
+    color: var(--text-light);
+}
+
+/* 예약 섹션 */
+.booking-section {
+    padding: var(--section-padding) 0;
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    color: var(--text-white);
+    text-align: center;
+}
+
+.booking-content h2 {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-white);
+}
+
+.booking-content p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.booking-options {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.booking-btn {
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.booking-btn.primary {
+    background: var(--accent-brown);
+    color: var(--text-white);
+    border: none;
+}
+
+.booking-btn.primary:hover {
+    background: #8a6647;
+    transform: translateY(-2px);
+}
+
+.booking-btn.secondary {
+    background: transparent;
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+}
+
+.booking-btn.secondary:hover {
+    background: var(--text-white);
+    color: var(--primary-deep-green);
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.booking-info p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* 모달 스타일 */
+.consulting-modal, .application-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-content.large {
+    max-width: 700px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.modal-header h3 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--text-dark);
+}
+
+.consulting-form, .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.consulting-form input,
+.consulting-form select,
+.consulting-form textarea,
+.application-form input,
+.application-form select,
+.application-form textarea {
+    padding: var(--spacing-sm);
+    border: 1px solid rgba(6, 52, 46, 0.2);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+}
+
+.consulting-form textarea,
+.application-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.form-check input[type="checkbox"] {
+    width: auto;
+}
+
+.form-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-section h4 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.submit-btn {
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border: none;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+    
+    .booking-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* 디지털 콘텐츠 페이지 특별 스타일 */
+.digital-overview {
+    padding: var(--section-padding) 0;
+}
+
+.digital-benefits {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+}
+
+.digital-benefits .benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+    background: none;
+    border: none;
+    padding: var(--spacing-md);
+}
+
+.digital-benefits .benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.digital-benefits span {
+    color: var(--primary-deep-green);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* VOD 섹션 */
+.vod-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.vod-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.vod-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.vod-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium);
+}
+
+.vod-card.featured {
+    border-color: var(--primary-deep-green);
+    box-shadow: 0 0 20px rgba(6, 52, 46, 0.1);
+}
+
+.vod-card.special {
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    color: var(--text-white);
+}
+
+.vod-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+    font-weight: var(--font-weight-semibold);
+}
+
+.vod-thumbnail {
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.thumbnail-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    position: relative;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-deep-green);
+    font-weight: bold;
+}
+
+.duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+}
+
+.vod-content h3 {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.vod-card.special .vod-content h3 {
+    color: var(--text-white);
+}
+
+.vod-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.lecture-count, .difficulty {
+    background: var(--theme-surface);
+    color: var(--text-light);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+}
+
+.vod-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.vod-curriculum {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.vod-curriculum li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 20px;
+}
+
+.vod-curriculum li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-deep-green);
+    font-weight: bold;
+}
+
+.vod-card.special .vod-curriculum li:before {
+    color: var(--text-white);
+}
+
+.vod-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-md) 0;
+}
+
+.benefit-tag {
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+}
+
+.vod-pricing {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.price-current {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    display: block;
+    margin: var(--spacing-xs) 0;
+}
+
+.vod-card.special .price-current {
+    color: var(--text-white);
+}
+
+.price-discount {
+    background: #dc2626;
+    color: var(--text-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+    display: inline-block;
+}
+
+.vod-btn {
+    width: 100%;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border: none;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vod-btn:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+.vod-btn.premium {
+    background: var(--accent-brown);
+}
+
+.vod-btn.premium:hover {
+    background: #8a6647;
+}
+
+/* 전자책 섹션 */
+.ebook-section {
+    padding: var(--section-padding) 0;
+}
+
+.ebook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.ebook-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ebook-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-premium);
+}
+
+.ebook-card.bundle {
+    border-color: var(--primary-deep-green);
+    background: var(--theme-surface);
+}
+
+.ebook-cover {
+    margin-bottom: var(--spacing-md);
+}
+
+.cover-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    text-align: center;
+    position: relative;
+}
+
+.cover-placeholder h4 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.4;
+}
+
+.ebook-content h3 {
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.ebook-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.ebook-info {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.pages, .format {
+    background: var(--theme-surface);
+    color: var(--text-light);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+}
+
+.ebook-price {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.ebook-pricing {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.ebook-pricing .price-original {
+    text-decoration: line-through;
+    color: var(--text-light);
+    font-size: 1rem;
+    display: block;
+}
+
+.ebook-pricing .price-current {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+}
+
+.ebook-btn {
+    width: 100%;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ebook-btn:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+.ebook-btn.special {
+    background: var(--accent-brown);
+}
+
+.ebook-btn.special:hover {
+    background: #8a6647;
+}
+
+/* 무료 콘텐츠 섹션 */
+.free-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.free-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.free-ebook {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.free-cover {
+    flex-shrink: 0;
+}
+
+.free-cover .cover-placeholder {
+    width: 150px;
+    height: 200px;
+    position: relative;
+}
+
+.free-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #dc2626;
+    color: var(--text-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+    font-weight: var(--font-weight-bold);
+}
+
+.free-info h3 {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.free-info p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.free-contents {
+    list-style: none;
+    padding: 0;
+}
+
+.free-contents li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-light);
+}
+
+.download-form {
+    background: var(--surface-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.download-form h4 {
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.free-download-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.download-btn {
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border: none;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+/* 구독 서비스 */
+.subscription-section {
+    padding: var(--section-padding) 0;
+}
+
+.subscription-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    border: 2px solid var(--primary-deep-green);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscription-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.subscription-header h3 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.subscription-price .price {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    display: block;
+}
+
+.price-desc {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-top: var(--spacing-xs);
+}
+
+.subscription-benefits h4 {
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-xl);
+}
+
+.benefits-list li {
+    padding: var(--spacing-sm) 0;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.subscription-cta {
+    text-align: center;
+}
+
+.subscription-btn {
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border: none;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-md);
+}
+
+.subscription-btn:hover {
+    background: #084339;
+    transform: translateY(-2px);
+}
+
+.subscription-note {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* FAQ 섹션 */
+.faq-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--surface-white);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: var(--spacing-lg);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: var(--theme-surface);
+}
+
+.faq-question h4 {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+    margin: 0;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: var(--primary-deep-green);
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+}
+
+.faq-answer p {
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 강사양성과정 추가 스타일 */
+.course-overview {
+    padding: var(--section-padding) 0;
+}
+
+.overview-highlights {
+    display: flex;
+    gap: var(--spacing-xl);
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+}
+
+.highlight-item {
+    text-align: center;
+}
+
+.highlight-number {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    display: block;
+}
+
+.highlight-label {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-top: var(--spacing-xs);
+}
+
+.curriculum-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.curriculum-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.curriculum-phase {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.curriculum-phase.special {
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    color: var(--text-white);
+}
+
+.phase-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.phase-number {
+    min-width: 60px;
+    height: 60px;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    flex-shrink: 0;
+}
+
+.curriculum-phase.special .phase-number {
+    background: var(--text-white);
+    color: var(--primary-deep-green);
+}
+
+.phase-header h3 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+}
+
+.curriculum-phase.special .phase-header h3 {
+    color: var(--text-white);
+}
+
+.phase-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+}
+
+.phase-description p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.curriculum-phase.special .phase-description p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.phase-topics {
+    list-style: none;
+    padding: 0;
+}
+
+.phase-topics li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 20px;
+}
+
+.phase-topics li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-deep-green);
+    font-weight: bold;
+}
+
+.curriculum-phase.special .phase-topics li {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.curriculum-phase.special .phase-topics li:before {
+    color: var(--text-white);
+}
+
+/* 성공 스토리 */
+.success-stories-section {
+    padding: var(--section-padding) 0;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.success-story {
+    background: var(--theme-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.success-story.featured {
+    background: var(--surface-white);
+    border-color: var(--primary-deep-green);
+    box-shadow: 0 0 20px rgba(6, 52, 46, 0.1);
+}
+
+.story-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+}
+
+.profile-info h4 {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.profile-info span {
+    font-size: var(--text-caption);
+    color: var(--text-light);
+}
+
+.story-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.story-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.achievement {
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+}
+
+/* 투자와 수익 */
+.investment-section {
+    padding: var(--section-padding) 0;
+    background: var(--theme-surface);
+}
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.investment-card, .roi-card, .support-card {
+    background: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+    text-align: center;
+}
+
+.investment-card h3, .roi-card h3, .support-card h3 {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-lg);
+}
+
+.price-info {
+    margin-bottom: var(--spacing-lg);
+}
+
+.price-main {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    display: block;
+}
+
+.price-detail {
+    color: var(--text-light);
+    margin-top: var(--spacing-xs);
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.payment-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--theme-surface);
+    border-radius: var(--radius-md);
+}
+
+.option-label {
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+}
+
+.option-price {
+    color: var(--text-light);
+}
+
+.roi-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.roi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--theme-surface);
+    border-radius: var(--radius-md);
+}
+
+.roi-period {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+}
+
+.roi-desc {
+    color: var(--text-light);
+}
+
+.support-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.support-list li {
+    padding: var(--spacing-sm) 0;
+    color: var(--text-light);
+}
+
+/* 지원 과정 */
+.admission-section {
+    padding: var(--section-padding) 0;
+}
+
+.admission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.requirements-card, .process-card {
+    background: var(--theme-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid rgba(6, 52, 46, 0.1);
+}
+
+.requirements-card h3, .process-card h3 {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-lg);
+}
+
+.requirements-list, .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.requirement-item, .step-item {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.req-icon {
+    font-size: 1.5rem;
+    min-width: 30px;
+}
+
+.step-number {
+    min-width: 40px;
+    height: 40px;
+    background: var(--primary-deep-green);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    flex-shrink: 0;
+}
+
+.req-content h4, .step-content h4 {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-deep-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.req-content p, .step-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* CTA 섹션 */
+.cta-section {
+    padding: var(--section-padding) 0;
+    background: linear-gradient(135deg, var(--primary-deep-green) 0%, #084339 100%);
+    color: var(--text-white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-white);
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.cta-btn {
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-btn.primary {
+    background: var(--accent-brown);
+    color: var(--text-white);
+    border: none;
+}
+
+.cta-btn.primary:hover {
+    background: #8a6647;
+    transform: translateY(-2px);
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+}
+
+.cta-btn.secondary:hover {
+    background: var(--text-white);
+    color: var(--primary-deep-green);
+}
+
+/* 반응형 추가 */
+@media (max-width: 768px) {
+    .digital-benefits {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .free-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .free-ebook {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .overview-highlights {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .phase-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .admission-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .investment-grid {
+        grid-template-columns: 1fr;
+    }
+}

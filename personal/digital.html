@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 콘텐츠 - Grace Speech</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/personal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="personal-theme">
+    <div class="scroll-progress"><div class="progress-bar"></div></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="../index.html" class="logo">Grace Speech</a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="home.html" class="nav__link">Home</a></li>
+                <li><a href="instructor.html" class="nav__link">강사양성과정</a></li>
+                <li><a href="consulting.html" class="nav__link">1:1컨설팅</a></li>
+                <li><a href="digital.html" class="nav__link active">디지털콘텐츠</a></li>
+                <li><a href="../common/process.html" class="nav__link">Process</a></li>
+                <li><a href="../common/contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__switch">
+                <a href="../corporate/home.html" class="switch-btn">기업교육 보기</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">디지털 콘텐츠</h1>
+                <p class="page-subtitle">언제 어디서든 Grace Speech와 함께</p>
+            </div>
+        </section>
+
+        <section class="digital-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <h2>자율적 학습의 새로운 기준</h2>
+                    <p>시간과 장소에 구애받지 않고 체계적으로 학습할 수 있는 프리미엄 디지털 콘텐츠입니다. VOD 강의부터 실용적인 전자책까지, 당신의 성장을 지원하는 모든 것이 준비되어 있습니다.</p>
+                    
+                    <div class="digital-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏰</div>
+                            <span>24시간 언제든지</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📱</div>
+                            <span>모든 디바이스에서</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔄</div>
+                            <span>무제한 반복 학습</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💰</div>
+                            <span>합리적인 가격</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vod-section">
+            <div class="container">
+                <h2 class="section-title">VOD 강의 시리즈</h2>
+                
+                <div class="vod-grid">
+                    <div class="vod-card featured">
+                        <div class="vod-badge">BEST</div>
+                        <div class="vod-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <div class="play-button">▶</div>
+                                <span class="duration">총 6시간</span>
+                            </div>
+                        </div>
+                        <div class="vod-content">
+                            <h3>스피치 기초 완성</h3>
+                            <div class="vod-meta">
+                                <span class="lecture-count">20강</span>
+                                <span class="difficulty">초급</span>
+                            </div>
+                            <p class="vod-description">스피치의 모든 기초를 체계적으로 학습할 수 있는 종합 과정입니다.</p>
+                            <ul class="vod-curriculum">
+                                <li>발성과 발음의 기초</li>
+                                <li>자세와 제스처</li>
+                                <li>긴장 관리법</li>
+                                <li>기본 발표 구조</li>
+                            </ul>
+                            <div class="vod-benefits">
+                                <span class="benefit-tag">1:1 피드백 2회</span>
+                                <span class="benefit-tag">실습 자료 제공</span>
+                            </div>
+                        </div>
+                        <div class="vod-pricing">
+                            <div class="price-original">199,000원</div>
+                            <div class="price-current">149,000원</div>
+                            <div class="price-discount">25% 할인</div>
+                        </div>
+                        <button class="vod-btn" onclick="purchaseVOD('basic')">수강 신청</button>
+                    </div>
+
+                    <div class="vod-card">
+                        <div class="vod-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <div class="play-button">▶</div>
+                                <span class="duration">총 4.5시간</span>
+                            </div>
+                        </div>
+                        <div class="vod-content">
+                            <h3>프레젠테이션 마스터</h3>
+                            <div class="vod-meta">
+                                <span class="lecture-count">15강</span>
+                                <span class="difficulty">중급</span>
+                            </div>
+                            <p class="vod-description">비즈니스 프레젠테이션의 모든 노하우를 담은 실무 중심 과정입니다.</p>
+                            <ul class="vod-curriculum">
+                                <li>스토리텔링 기법</li>
+                                <li>시각자료 활용법</li>
+                                <li>설득 커뮤니케이션</li>
+                                <li>Q&A 대응 전략</li>
+                            </ul>
+                            <div class="vod-benefits">
+                                <span class="benefit-tag">PPT 템플릿 제공</span>
+                                <span class="benefit-tag">체크리스트</span>
+                            </div>
+                        </div>
+                        <div class="vod-pricing">
+                            <div class="price-current">199,000원</div>
+                        </div>
+                        <button class="vod-btn" onclick="purchaseVOD('presentation')">수강 신청</button>
+                    </div>
+
+                    <div class="vod-card">
+                        <div class="vod-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <div class="play-button">▶</div>
+                                <span class="duration">총 3시간</span>
+                            </div>
+                        </div>
+                        <div class="vod-content">
+                            <h3>면접 스피치 완벽대비</h3>
+                            <div class="vod-meta">
+                                <span class="lecture-count">10강</span>
+                                <span class="difficulty">초급</span>
+                            </div>
+                            <p class="vod-description">면접에서 성공하기 위한 모든 스피치 기법을 담았습니다.</p>
+                            <ul class="vod-curriculum">
+                                <li>완벽한 자기소개</li>
+                                <li>지원동기 어필법</li>
+                                <li>압박질문 대응</li>
+                                <li>면접관 설득 기법</li>
+                            </ul>
+                            <div class="vod-benefits">
+                                <span class="benefit-tag">모의면접 1회</span>
+                                <span class="benefit-tag">면접 가이드북</span>
+                            </div>
+                        </div>
+                        <div class="vod-pricing">
+                            <div class="price-current">99,000원</div>
+                        </div>
+                        <button class="vod-btn" onclick="purchaseVOD('interview')">수강 신청</button>
+                    </div>
+
+                    <div class="vod-card special">
+                        <div class="vod-badge">패키지</div>
+                        <div class="vod-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <div class="play-button">▶</div>
+                                <span class="duration">총 13.5시간</span>
+                            </div>
+                        </div>
+                        <div class="vod-content">
+                            <h3>VIP 종합 패키지</h3>
+                            <div class="vod-meta">
+                                <span class="lecture-count">45강</span>
+                                <span class="difficulty">전체</span>
+                            </div>
+                            <p class="vod-description">모든 VOD 강의를 포함한 완전 패키지입니다.</p>
+                            <ul class="vod-curriculum">
+                                <li>전체 강의 무제한 수강</li>
+                                <li>모든 특별 혜택 포함</li>
+                                <li>신규 강의 무료 제공</li>
+                                <li>우선 지원 서비스</li>
+                            </ul>
+                            <div class="vod-benefits">
+                                <span class="benefit-tag">1:1 상담 3회</span>
+                                <span class="benefit-tag">모든 자료 제공</span>
+                            </div>
+                        </div>
+                        <div class="vod-pricing">
+                            <div class="price-original">497,000원</div>
+                            <div class="price-current">399,000원</div>
+                            <div class="price-discount">20% 할인</div>
+                        </div>
+                        <button class="vod-btn premium" onclick="purchaseVOD('vip')">VIP 신청</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ebook-section">
+            <div class="container">
+                <h2 class="section-title">비법서 시리즈</h2>
+                
+                <div class="ebook-grid">
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <div class="cover-placeholder">
+                                <h4>스피치 불안<br>제로 만들기</h4>
+                            </div>
+                        </div>
+                        <div class="ebook-content">
+                            <h3>스피치 불안 제로 만들기</h3>
+                            <p class="ebook-description">무대 공포증과 발표 불안을 완전히 극복하는 실전 가이드</p>
+                            <div class="ebook-info">
+                                <span class="pages">128페이지</span>
+                                <span class="format">PDF + EPUB</span>
+                            </div>
+                            <div class="ebook-price">29,000원</div>
+                        </div>
+                        <button class="ebook-btn" onclick="purchaseEbook('anxiety')">구매하기</button>
+                    </div>
+
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <div class="cover-placeholder">
+                                <h4>첫인상<br>3초의 법칙</h4>
+                            </div>
+                        </div>
+                        <div class="ebook-content">
+                            <h3>첫인상 3초의 법칙</h3>
+                            <p class="ebook-description">첫 3초 만에 상대방의 마음을 사로잡는 비밀</p>
+                            <div class="ebook-info">
+                                <span class="pages">96페이지</span>
+                                <span class="format">PDF + EPUB</span>
+                            </div>
+                            <div class="ebook-price">25,000원</div>
+                        </div>
+                        <button class="ebook-btn" onclick="purchaseEbook('first-impression')">구매하기</button>
+                    </div>
+
+                    <div class="ebook-card">
+                        <div class="ebook-cover">
+                            <div class="cover-placeholder">
+                                <h4>회의에서<br>인정받는 발언법</h4>
+                            </div>
+                        </div>
+                        <div class="ebook-content">
+                            <h3>회의에서 인정받는 발언법</h3>
+                            <p class="ebook-description">직장에서 영향력을 발휘하는 실전 커뮤니케이션</p>
+                            <div class="ebook-info">
+                                <span class="pages">156페이지</span>
+                                <span class="format">PDF + EPUB</span>
+                            </div>
+                            <div class="ebook-price">35,000원</div>
+                        </div>
+                        <button class="ebook-btn" onclick="purchaseEbook('meeting')">구매하기</button>
+                    </div>
+
+                    <div class="ebook-card bundle">
+                        <div class="ebook-cover">
+                            <div class="cover-placeholder">
+                                <h4>비법서<br>전집</h4>
+                            </div>
+                        </div>
+                        <div class="ebook-content">
+                            <h3>비법서 전집</h3>
+                            <p class="ebook-description">모든 비법서를 한 번에! 특별 할인가로 제공</p>
+                            <div class="ebook-info">
+                                <span class="pages">380페이지</span>
+                                <span class="format">전체 포맷</span>
+                            </div>
+                            <div class="ebook-pricing">
+                                <span class="price-original">89,000원</span>
+                                <span class="price-current">79,000원</span>
+                            </div>
+                        </div>
+                        <button class="ebook-btn special" onclick="purchaseEbook('bundle')">전집 구매</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="free-section">
+            <div class="container">
+                <h2 class="section-title">무료 콘텐츠</h2>
+                
+                <div class="free-content">
+                    <div class="free-ebook">
+                        <div class="free-cover">
+                            <div class="cover-placeholder">
+                                <h4>스피치 자신감<br>7일 챌린지</h4>
+                                <span class="free-badge">FREE</span>
+                            </div>
+                        </div>
+                        <div class="free-info">
+                            <h3>스피치 자신감 7일 챌린지</h3>
+                            <p>7일 만에 스피치 자신감을 키우는 실전 가이드북을 무료로 받아보세요!</p>
+                            <ul class="free-contents">
+                                <li>✓ 7일 단계별 실습 가이드</li>
+                                <li>✓ 매일 실천할 수 있는 미션</li>
+                                <li>✓ 자신감 측정 체크리스트</li>
+                                <li>✓ 보너스 음성 가이드</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="download-form">
+                        <h4>지금 무료로 다운로드하세요!</h4>
+                        <form class="free-download-form" id="freeDownloadForm">
+                            <input type="text" placeholder="이름 *" required>
+                            <input type="email" placeholder="이메일 *" required>
+                            <input type="tel" placeholder="연락처 *" required>
+                            <div class="form-check">
+                                <input type="checkbox" id="marketing" name="marketing">
+                                <label for="marketing">Grace Speech 뉴스레터 구독 (선택)</label>
+                            </div>
+                            <button type="submit" class="download-btn">무료 다운로드</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription-section">
+            <div class="container">
+                <h2 class="section-title">월 구독 서비스</h2>
+                
+                <div class="subscription-card">
+                    <div class="subscription-header">
+                        <h3>Grace Speech Premium</h3>
+                        <div class="subscription-price">
+                            <span class="price">월 29,000원</span>
+                            <span class="price-desc">언제든지 해지 가능</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-benefits">
+                        <h4>구독 혜택</h4>
+                        <ul class="benefits-list">
+                            <li>✓ 신규 VOD 강의 우선 제공</li>
+                            <li>✓ 월 1회 라이브 Q&A 세션</li>
+                            <li>✓ 전용 온라인 커뮤니티 참여</li>
+                            <li>✓ 오프라인 모임 우선 초대</li>
+                            <li>✓ 개인 상담 30% 할인</li>
+                            <li>✓ 최신 스피치 트렌드 리포트</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subscription-cta">
+                        <button class="subscription-btn" onclick="subscribeService()">구독 시작하기</button>
+                        <p class="subscription-note">첫 달 무료 체험 가능</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>VOD 강의는 얼마나 오래 볼 수 있나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>구매 후 1년간 무제한으로 시청 가능합니다. 기간 내에는 언제든지 반복 학습하실 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>모바일에서도 학습할 수 있나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>네, PC, 태블릿, 스마트폰 등 모든 기기에서 학습 가능합니다. 어디서든 편리하게 이용하세요.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>환불은 언제까지 가능한가요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>구매 후 7일 이내, 강의 시청률이 20% 미만인 경우 100% 환불 가능합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>수강 중 질문이 있으면 어떻게 하나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>각 강의별 Q&A 게시판을 통해 질문하시면 24시간 내에 답변드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-cta">
+        <button class="floating-btn" onclick="openQuickContact()">
+            <span class="btn-icon">💬</span>
+            <span class="btn-text">상담 신청</span>
+        </button>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/personal.js"></script>
+    <script src="../js/digital.js"></script>
+</body>
+</html>
