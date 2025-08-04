@@ -33,10 +33,60 @@
     </header>
 
     <main>
-        <section class="page-hero">
+        <section class="consulting-hero-premium">
+            <div class="hero-background-animated">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            
             <div class="container">
-                <h1 class="page-title">1:1 개인 컨설팅</h1>
-                <p class="page-subtitle">당신만을 위한 완전 맞춤형 스피치 혁신</p>
+                <div class="hero-content-advanced">
+                    <div class="hero-badge-premium">
+                        <span class="badge-icon">👑</span>
+                        <span class="badge-text">프리미엄 1:1 컨설팅</span>
+                    </div>
+                    
+                    <h1 class="consulting-title-revolutionary">
+                        <span class="title-line-1">오직 당신만을 위한</span>
+                        <span class="title-line-2 gradient-text">완전 맞춤형</span>
+                        <span class="title-line-3">스피치 마스터클래스</span>
+                    </h1>
+                    
+                    <p class="consulting-subtitle-premium">
+                        천편일률적인 교육은 이제 그만! <strong>당신의 성향, 목표, 상황에 100% 맞춘</strong><br>
+                        전담 코치와 함께하는 프리미엄 여정으로 <span class="highlight-text">인생을 바꿔보세요</span>
+                    </p>
+                    
+                    <div class="consulting-promises">
+                        <div class="promise-item">
+                            <span class="promise-icon">⚡</span>
+                            <span class="promise-text">8주 만에 완전한 변화</span>
+                        </div>
+                        <div class="promise-item">
+                            <span class="promise-icon">🎯</span>
+                            <span class="promise-text">100% 맞춤 설계</span>
+                        </div>
+                        <div class="promise-item">
+                            <span class="promise-icon">🏆</span>
+                            <span class="promise-text">성과 보장 시스템</span>
+                        </div>
+                    </div>
+                    
+                    <div class="consulting-cta-group">
+                        <button class="consulting-cta primary pulse" onclick="openPremiumConsult()">
+                            <span class="cta-icon">🚀</span>
+                            <span class="cta-text">프리미엄 상담 신청</span>
+                            <span class="cta-subtitle">완전 무료</span>
+                        </button>
+                        <button class="consulting-cta secondary" onclick="scrollToPrograms()">
+                            <span class="cta-text">프로그램 둘러보기</span>
+                            <span class="cta-arrow">↓</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -83,43 +133,132 @@
             </div>
         </section>
 
-        <section class="programs-section">
+        <section class="programs-section-premium" id="programs">
             <div class="container">
-                <h2 class="section-title">컨설팅 프로그램</h2>
+                <div class="section-header-advanced">
+                    <div class="section-badge">
+                        <span class="badge-icon">💎</span>
+                        <span class="badge-text">프리미엄 프로그램 라인업</span>
+                    </div>
+                    <h2 class="section-title-revolutionary">
+                        <span class="title-main">당신의 목표에 따라</span>
+                        <span class="title-highlight">완벽하게 설계된</span>
+                        <span class="title-sub">맞춤형 솔루션을 선택하세요</span>
+                    </h2>
+                </div>
                 
-                <div class="programs-grid">
-                    <div class="program-card recommended">
-                        <div class="program-badge">추천</div>
-                        <div class="program-header">
-                            <h3>기초 스피치 마스터</h3>
-                            <span class="program-duration">8주 과정</span>
+                <div class="programs-grid-advanced">
+                    <div class="program-card-premium bestseller">
+                        <div class="program-badges">
+                            <div class="badge-bestseller">BEST SELLER</div>
+                            <div class="badge-recommended">⭐ 추천</div>
                         </div>
-                        <div class="program-content">
-                            <div class="program-target">
-                                <span class="target-label">대상:</span>
-                                <span class="target-value">스피치 초보자</span>
-                            </div>
-                            <div class="program-goal">
-                                <span class="goal-label">목표:</span>
-                                <span class="goal-value">기본기 완벽 습득</span>
-                            </div>
-                            <ul class="program-features">
-                                <li>발성과 발음 교정</li>
-                                <li>자세와 제스처 개선</li>
-                                <li>긴장 관리 기법</li>
-                                <li>기본 발표 스킬</li>
-                                <li>자신감 구축</li>
-                            </ul>
-                            <div class="program-result">
-                                <h4>기대 효과</h4>
-                                <p>자신감 있는 발표 가능</p>
+                        <div class="program-icon-premium">
+                            <span class="icon-large">🎯</span>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="program-header-premium">
+                            <h3>스피치 마스터 파운데이션</h3>
+                            <div class="program-meta">
+                                <span class="duration">8주 완성</span>
+                                <span class="intensity">주 2회</span>
+                                <span class="level">초급~중급</span>
                             </div>
                         </div>
-                        <div class="program-price">
-                            <span class="price-value">120만원</span>
-                            <span class="price-detail">주 2회 × 8주</span>
+                        <div class="program-content-premium">
+                            <div class="program-description">
+                                <p>스피치의 모든 기초를 탄탄하게 다지고 자신감 있는 발표자로 완전히 변화하는 종합 과정입니다.</p>
+                            </div>
+                            
+                            <div class="program-targets">
+                                <h4>🎯 이런 분들께 추천</h4>
+                                <div class="target-tags">
+                                    <span class="tag">스피치 초보자</span>
+                                    <span class="tag">발표 공포증</span>
+                                    <span class="tag">기초 탄탄히</span>
+                                    <span class="tag">자신감 부족</span>
+                                </div>
+                            </div>
+                            
+                            <div class="program-curriculum-premium">
+                                <h4>📚 핵심 커리큘럼</h4>
+                                <div class="curriculum-list">
+                                    <div class="curriculum-item">
+                                        <span class="item-icon">🎤</span>
+                                        <span class="item-text">과학적 발성과 완벽한 발음</span>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <span class="item-icon">💃</span>
+                                        <span class="item-text">매력적인 자세와 제스처</span>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <span class="item-icon">🧠</span>
+                                        <span class="item-text">긴장 완전 정복 기법</span>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <span class="item-icon">📈</span>
+                                        <span class="item-text">설득력 있는 발표 구조</span>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <span class="item-icon">💪</span>
+                                        <span class="item-text">흔들림 없는 자신감 구축</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="program-outcomes">
+                                <h4>🏆 변화 결과</h4>
+                                <div class="outcome-metrics">
+                                    <div class="metric">
+                                        <span class="metric-number">500%</span>
+                                        <span class="metric-label">자신감 증가</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-number">100%</span>
+                                        <span class="metric-label">발표 성공률</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <button class="program-btn" onclick="selectProgram('basic')">선택하기</button>
+                        <div class="program-investment">
+                            <div class="investment-header">
+                                <h4>💰 투자 정보</h4>
+                            </div>
+                            <div class="price-structure">
+                                <div class="price-main">
+                                    <span class="currency">₩</span>
+                                    <span class="amount">1,200,000</span>
+                                </div>
+                                <div class="price-details">
+                                    <span class="detail-item">16회 세션 (주 2회 × 8주)</span>
+                                    <span class="detail-item">1회당 75,000원</span>
+                                </div>
+                            </div>
+                            <div class="special-offers">
+                                <div class="offer-item">
+                                    <span class="offer-icon">🎁</span>
+                                    <span class="offer-text">전용 교재 무료 제공</span>
+                                </div>
+                                <div class="offer-item">
+                                    <span class="offer-icon">📞</span>
+                                    <span class="offer-text">24시간 긴급 상담</span>
+                                </div>
+                                <div class="offer-item">
+                                    <span class="offer-icon">🔄</span>
+                                    <span class="offer-text">6개월 사후 관리</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-actions">
+                            <button class="program-btn-premium primary" onclick="selectProgram('foundation')">
+                                <span class="btn-icon">🚀</span>
+                                <span class="btn-text">지금 시작하기</span>
+                            </button>
+                            <button class="program-btn-premium secondary" onclick="previewProgram('foundation')">
+                                <span class="btn-text">상세 정보</span>
+                                <span class="btn-icon">→</span>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="program-card">

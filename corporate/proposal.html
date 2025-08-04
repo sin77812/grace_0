@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맞춤 제안서 - Grace Speech</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/corporate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="corporate-theme">
+    <div class="scroll-progress"><div class="progress-bar"></div></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="../index.html" class="logo">Grace Speech</a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="home.html" class="nav__link">Home</a></li>
+                <li><a href="education.html" class="nav__link">기업교육</a></li>
+                <li><a href="proposal.html" class="nav__link active">제안서</a></li>
+                <li><a href="portfolio.html" class="nav__link">포트폴리오</a></li>
+                <li><a href="../common/process.html" class="nav__link">Process</a></li>
+                <li><a href="../common/contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__switch">
+                <a href="../personal/home.html" class="switch-btn">개인과정 보기</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="proposal-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="proposal-title">맞춤형 교육 제안서</h1>
+                    <p class="proposal-subtitle">귀하의 조직 특성에 완벽히 맞춘<br>전략적 커뮤니케이션 솔루션</p>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎯</span>
+                            <span class="benefit-text">100% 맞춤 설계</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📊</span>
+                            <span class="benefit-text">데이터 기반 진단</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🚀</span>
+                            <span class="benefit-text">즉시 적용 가능</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proposal-form-section">
+            <div class="container">
+                <div class="form-header">
+                    <h2 class="section-title">무료 진단 및 제안서 요청</h2>
+                    <p class="section-subtitle">몇 가지 질문으로 귀하의 조직에 최적화된 교육 프로그램을 설계해드립니다</p>
+                </div>
+
+                <form class="proposal-form" id="proposalForm">
+                    <div class="form-step active" data-step="1">
+                        <h3 class="step-title">
+                            <span class="step-number">01</span>
+                            기본 정보
+                        </h3>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="companyName">회사명 *</label>
+                                <input type="text" id="companyName" name="companyName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">업종 *</label>
+                                <select id="industry" name="industry" required>
+                                    <option value="">선택해주세요</option>
+                                    <option value="manufacturing">제조업</option>
+                                    <option value="tech">IT/테크</option>
+                                    <option value="finance">금융업</option>
+                                    <option value="retail">유통/소매</option>
+                                    <option value="construction">건설업</option>
+                                    <option value="healthcare">의료/헬스케어</option>
+                                    <option value="education">교육</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="employees">직원 수 *</label>
+                                <select id="employees" name="employees" required>
+                                    <option value="">선택해주세요</option>
+                                    <option value="under50">50명 미만</option>
+                                    <option value="50-100">50-100명</option>
+                                    <option value="100-300">100-300명</option>
+                                    <option value="300-500">300-500명</option>
+                                    <option value="over500">500명 이상</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="revenue">연 매출 규모</label>
+                                <select id="revenue" name="revenue">
+                                    <option value="">선택해주세요</option>
+                                    <option value="under10">100억 미만</option>
+                                    <option value="10-50">100억-500억</option>
+                                    <option value="50-100">500억-1000억</option>
+                                    <option value="over100">1000억 이상</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="btn-next" onclick="nextStep()">다음 단계</button>
+                        </div>
+                    </div>
+
+                    <div class="form-step" data-step="2">
+                        <h3 class="step-title">
+                            <span class="step-number">02</span>
+                            교육 대상 및 목표
+                        </h3>
+                        <div class="form-group">
+                            <label>교육 대상 (복수 선택 가능)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="target" value="ceo">
+                                    <span class="checkmark"></span>
+                                    CEO/임원진
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="target" value="manager">
+                                    <span class="checkmark"></span>
+                                    중간관리자
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="target" value="team-leader">
+                                    <span class="checkmark"></span>
+                                    팀장급
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="target" value="employee">
+                                    <span class="checkmark"></span>
+                                    일반 직원
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="target" value="sales">
+                                    <span class="checkmark"></span>
+                                    영업/마케팅팀
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="target" value="all">
+                                    <span class="checkmark"></span>
+                                    전 직원
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="goals">교육 목표 (복수 선택 가능)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="goals" value="presentation">
+                                    <span class="checkmark"></span>
+                                    프레젠테이션 스킬 향상
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="goals" value="communication">
+                                    <span class="checkmark"></span>
+                                    조직 내 소통 개선
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="goals" value="leadership">
+                                    <span class="checkmark"></span>
+                                    리더십 커뮤니케이션
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="goals" value="meeting">
+                                    <span class="checkmark"></span>
+                                    회의 효율성 증대
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="goals" value="customer">
+                                    <span class="checkmark"></span>
+                                    고객 대응 스킬
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="goals" value="crisis">
+                                    <span class="checkmark"></span>
+                                    위기 상황 대응
+                                </label>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="btn-prev" onclick="prevStep()">이전</button>
+                            <button type="button" class="btn-next" onclick="nextStep()">다음 단계</button>
+                        </div>
+                    </div>
+
+                    <div class="form-step" data-step="3">
+                        <h3 class="step-title">
+                            <span class="step-number">03</span>
+                            현재 상황 진단
+                        </h3>
+                        <div class="form-group">
+                            <label for="currentIssues">현재 조직의 커뮤니케이션 관련 문제점</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="issues" value="meeting-inefficiency">
+                                    <span class="checkmark"></span>
+                                    회의 비효율성
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="issues" value="poor-presentation">
+                                    <span class="checkmark"></span>
+                                    발표 품질 저하
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="issues" value="internal-conflict">
+                                    <span class="checkmark"></span>
+                                    부서 간 소통 문제
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="issues" value="leadership-gap">
+                                    <span class="checkmark"></span>
+                                    리더십 소통 부족
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="issues" value="customer-complaint">
+                                    <span class="checkmark"></span>
+                                    고객 불만 증가
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="issues" value="external-image">
+                                    <span class="checkmark"></span>
+                                    대외 이미지 문제
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="urgency">개선 시급도</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="">선택해주세요</option>
+                                    <option value="immediate">즉시 필요</option>
+                                    <option value="within-month">1개월 내</option>
+                                    <option value="within-quarter">분기 내</option>
+                                    <option value="within-year">연말까지</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">예산 범위</label>
+                                <select id="budget" name="budget">
+                                    <option value="">선택해주세요</option>
+                                    <option value="under-500">500만원 미만</option>
+                                    <option value="500-1000">500만-1000만원</option>
+                                    <option value="1000-3000">1000만-3000만원</option>
+                                    <option value="over-3000">3000만원 이상</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="btn-prev" onclick="prevStep()">이전</button>
+                            <button type="button" class="btn-next" onclick="nextStep()">다음 단계</button>
+                        </div>
+                    </div>
+
+                    <div class="form-step" data-step="4">
+                        <h3 class="step-title">
+                            <span class="step-number">04</span>
+                            연락처 정보
+                        </h3>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="contactName">담당자명 *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="position">직급/부서</label>
+                                <input type="text" id="position" name="position">
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="phone">연락처 *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일 *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additional">추가 요청사항</label>
+                            <textarea id="additional" name="additional" rows="4" placeholder="기타 특별한 요구사항이나 문의사항이 있으시면 자유롭게 작성해주세요."></textarea>
+                        </div>
+                        <div class="step-buttons">
+                            <button type="button" class="btn-prev" onclick="prevStep()">이전</button>
+                            <button type="submit" class="btn-submit">
+                                <span class="submit-icon">📋</span>
+                                맞춤 제안서 요청하기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-progress">
+                        <div class="progress-track">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-dots">
+                            <span class="progress-dot active" data-step="1">1</span>
+                            <span class="progress-dot" data-step="2">2</span>
+                            <span class="progress-dot" data-step="3">3</span>
+                            <span class="progress-dot" data-step="4">4</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="proposal-benefits">
+            <div class="container">
+                <h2 class="section-title">맞춤 제안서의 특별함</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🔍</div>
+                            <h3>정밀 진단</h3>
+                        </div>
+                        <p>조직의 현재 상황을 체계적으로 분석하여 핵심 문제점을 정확히 파악합니다</p>
+                        <ul class="benefit-details">
+                            <li>360도 현황 분석</li>
+                            <li>업종별 벤치마킹</li>
+                            <li>우선순위 매트릭스</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">⚙️</div>
+                            <h3>완전 맞춤 설계</h3>
+                        </div>
+                        <p>귀하의 조직 문화와 특성에 완벽히 맞춘 교육 프로그램을 설계합니다</p>
+                        <ul class="benefit-details">
+                            <li>조직별 커스터마이징</li>
+                            <li>단계별 로드맵</li>
+                            <li>실무 중심 커리큘럼</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">📊</div>
+                            <h3>ROI 계산</h3>
+                        </div>
+                        <p>투자 대비 기대 효과를 구체적인 수치로 제시하여 명확한 의사결정을 지원합니다</p>
+                        <ul class="benefit-details">
+                            <li>정량적 효과 분석</li>
+                            <li>비용 절감 계산</li>
+                            <li>성과 측정 지표</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">🎯</div>
+                            <h3>실행 계획</h3>
+                        </div>
+                        <p>교육 후 지속적인 성과를 위한 구체적인 실행 방안을 제공합니다</p>
+                        <ul class="benefit-details">
+                            <li>단계별 실행 스케줄</li>
+                            <li>팔로우업 계획</li>
+                            <li>성과 모니터링</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proposal-timeline">
+            <div class="container">
+                <h2 class="section-title">제안서 제공 프로세스</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>요청서 접수</h3>
+                            <p>제출해주신 정보를 바탕으로 1차 분석을 진행합니다</p>
+                            <span class="timeline-duration">즉시 확인</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h3>전화 상담</h3>
+                            <p>담당 컨설턴트가 직접 연락드려 세부사항을 논의합니다</p>
+                            <span class="timeline-duration">1일 내</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>현장 방문 (선택)</h3>
+                            <p>필요시 직접 방문하여 조직 문화와 현황을 파악합니다</p>
+                            <span class="timeline-duration">3일 내</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-content">
+                            <h3>맞춤 제안서 제공</h3>
+                            <p>완성된 맞춤형 교육 제안서를 제공하고 발표 일정을 잡습니다</p>
+                            <span class="timeline-duration">5-7일</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <h2 class="section-title">제안서를 받아보신 고객들의 이야기</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"처음에는 일반적인 교육 프로그램인 줄 알았는데, 정말 우리 회사만을 위한 맞춤형 솔루션이었습니다. 문제 진단부터 해결책까지 모든 것이 완벽했어요."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>김○○ 부장</strong>
+                            <span>중견 제조업체 인사팀</span>
+                        </div>
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"ROI까지 구체적으로 계산해주셔서 경영진 보고가 수월했습니다. 교육 후 실제로 회의 시간이 30% 단축되었어요."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>박○○ 이사</strong>
+                            <span>IT 서비스 기업</span>
+                        </div>
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"다른 업체들과는 차원이 다른 제안서였습니다. 우리 업종의 특성을 완벽하게 이해하고 계셨어요."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>최○○ 대표</strong>
+                            <span>바이오 벤처기업</span>
+                        </div>
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-cta">
+        <a href="../common/contact.html" class="floating-btn">
+            <span class="btn-icon">💬</span>
+            <span class="btn-text">직접 상담</span>
+        </a>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/corporate.js"></script>
+    <script>
+        let currentStep = 1;
+        const totalSteps = 4;
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+                document.querySelector(`[data-step="${currentStep}"]`).querySelector('.progress-dot').classList.remove('active');
+                currentStep++;
+                document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+                document.querySelector(`[data-step="${currentStep}"]`).querySelector('.progress-dot').classList.add('active');
+                updateProgress();
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+                document.querySelector(`[data-step="${currentStep}"]`).querySelector('.progress-dot').classList.remove('active');
+                currentStep--;
+                document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+                document.querySelector(`[data-step="${currentStep}"]`).querySelector('.progress-dot').classList.add('active');
+                updateProgress();
+            }
+        }
+
+        function updateProgress() {
+            const progressFill = document.getElementById('progressFill');
+            const progress = (currentStep / totalSteps) * 100;
+            progressFill.style.width = progress + '%';
+        }
+
+        document.getElementById('proposalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 실제 구현에서는 폼 데이터를 서버로 전송
+            alert('제안서 요청이 접수되었습니다. 24시간 내에 연락드리겠습니다.');
+        });
+    </script>
+</body>
+</html>
